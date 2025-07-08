@@ -13,7 +13,6 @@ rectangle1.Display(rectangle1)
 ```
 ```lua
 -- Circle --
-
 local circle1 = FLT_Circle:new()
 circle1.SetRadius(circle1, 50)
 circle1.SetPosition(circle1, 300, 200)
