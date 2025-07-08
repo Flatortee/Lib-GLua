@@ -41,9 +41,6 @@ end
 
 function System:Init(func, addonName, path, isDebugMode)
 
-    -- HideDefaultHUD --
-    System:HideDefaultHUD()
-
     if addonName then
         print("Initialisation : " ..addonName)
     end
@@ -54,7 +51,6 @@ function System:Init(func, addonName, path, isDebugMode)
 
     hook.Add("InitPostEntity", "GameLoop_Init", function()
         if not init then
-            print("Init Base")
             ResourceManager:Init(path)
             func()
             init = true
