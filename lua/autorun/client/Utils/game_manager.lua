@@ -1,8 +1,6 @@
 FLT_GameManager = {}
 FLT_GameManager.__index = FLT_GameManager
 
-init = false
-
 function FLT_GameManager:new()
     local obj = setmetatable({}, FLT_GameManager)
     return obj
@@ -35,23 +33,3 @@ end
 function FLT_GameManager:GetPlayerJob()
     return LocalPlayer():getDarkRPVar("job")
 end
-
---#region OTHERS
-
-function FLT_GameManager:Init(fonction)
-
-    if not init then
-        fonction()
-        init = true
-    end
-end
-
-function FLT_GameManager:HideDefaultHUD(bool)
-
-    if not init then
-        fonction()
-        init = true
-    end
-end
-
---#endregion
