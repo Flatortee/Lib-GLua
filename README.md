@@ -1,4 +1,4 @@
-# Lib GLua
+# Lib GLua UI
 
 ## Exemple
 ```lua
